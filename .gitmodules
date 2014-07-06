@@ -1,0 +1,4 @@
+[submodule "_book"]
+	path = _book
+	url = git@github.com:treby/c86-git.git
+	branch = gh-pages
