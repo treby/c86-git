@@ -1,9 +1,5 @@
 # Git
 
-- の：というわけでここからは実際に使い始めてみるわよ。
-- は：わくわくなのです。
-
-
 # Getting start
 
 ## gitコマンドの導入
@@ -18,11 +14,9 @@ http://git-scm.com/downloads
 [TODO: Windowsでの導入方法]
 
 ## バージョン管理の開始
+- `git config`
 - `git init`
   - 今いるディレクトリ以下のファイルをgit管理下におくコマンド
-- `git clone`
-  - すでにあるリポジトリを手元に持ってくるコマンド
-
 
 # Record history
 
@@ -32,8 +26,18 @@ http://git-scm.com/downloads
   - ステージングにあげた変更をリポジトリに反映する
 - `git reset`
   - 変更を取り消す
+- `git log`
 
 
 # Branch
+- `git branch`
+- `git checkout`
+- `git merge`
 
 # Remote
+- `git remote`
+- `git clone`
+  - すでにあるリポジトリを手元に持ってくるコマンド。
+- `git fetch`
+- `git pull`
+- `git push`
