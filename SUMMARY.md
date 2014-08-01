@@ -8,6 +8,5 @@
    * [Commands](git/commands.md)
 * [GitHub](github/README.md)
 * [Workflow](workflow/README.md)
-* [Postscript](postscript/README.md)
 * [References](references/README.md)
 
