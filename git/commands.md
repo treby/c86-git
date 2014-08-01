@@ -88,13 +88,9 @@ Initialized empty Git repository in /Users/treby/Documents/sample-git/.git/
 
 ## 歴史を保存する
 まずは、基本的なコマンド類について説明します。
+先ほどの`git init`コマンドを実行しただけではまだリポジトリ保存されていません。
 
-### git add
-
-### git commit
-
-
-`git status`コマンドを
+このことは`git status`コマンド(後述)を使って確認することができます。
 
 ```
 % git status
@@ -111,27 +107,197 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
+`git add`コマンド`git commit`コマンドを使って、リポジトリに歴史を保存しましょう。
 
+### git add
+ワーキングツリーに行った変更をステージング・エリアに反映するためのコマンドです。
+
+`index.html`の変更をステージング・エリアに反映させるには、`git add index.html`のように指定します。
+
+```
+% git add index.html
+% git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	css/
+	js/
+```
+
+また、カレントディレクトリ以下のファイル全てを追加するには、`git add .`と指定すれば良いでしょう。
+
+```
+% git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   css/style.css
+	new file:   index.html
+	new file:   js/index.js
+```
+
+### git commit
+ステージング・エリアにある変更をリポジトリに反映します。`-m`オプションをつけて、コメントを記述します。
+
+```
+% git commit -m 'Initial commit.'
+[master (root-commit) 47bec42] Initial commit.
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 css/style.css
+ create mode 100644 index.html
+ create mode 100644 js/index.js
+```
+
+ちなみにワーキング・エリアに加えた修正(新規ファイルの追加除く)を全て`git add`し、`git commit`するのであれば、`git commit -am`の一コマンドで実行することが可能です。
+
+```
+% edit index.html
+% git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+% git commit -am 'Second commit.'
+[master a7ffd6b] Second commit.
+ 1 file changed, 6 insertions(+)
+```
+
+### git reset
+ステージング・エリアの参照を設定し直します。
+一度ステージング・エリアに反映した変更を取り消す際などに使用します。
+
+```
+% git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	detail.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+% git add detail.html
+
+% git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   detail.html
+
+% git reset
+
+% git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	detail.html
+```
+
+下記のような感じに履歴を残さずに歴史を書き換えることが可能です。
+
+```
+% git log --oneline
+849072f Add detail.html
+a7ffd6b Second commit.
+733b329 Initial commit.
+
+% git reset a7ffd6b
+
+% git log --oneline
+a7ffd6b Second commit.
+733b329 Initial commit.
+```
+
+### git rm
+ファイルを削除する際に使用します。
+
+```
+% git rm <ファイル名>
+```
+
+### git mv
+ファイル名を明示的に変更する際に使用します。
+
+```
+% git mv <現在のファイル名> <変更したいファイル名>
+```
 
 ## 状態を確認する
 
-- `git add`
-  - 変更をステージング・エリアにあげる
-- `git commit`
-  - ステージングにあげた変更をリポジトリに反映する
-- `git reset`
-  - 変更を取り消す
-- `git log`
+### git status
+現在のワーキング・ツリーの状態を表示します。
 
 
-- `git branch`
-- `git checkout`
-- `git merge`
+### git log
+リポジトリの履歴を表示します。
+
+
+## ブランチを利用する
+
+### git branch
+ブランチの一覧を表示したり、新しくブランチを作成したりします。
+
+### git checkout
+ブランチの切り替えを行います。
+
+### git merge
+ブランチとブランチを統合します。
+
+## 歴史を変更する
+
+### git rebase
+歴史を書き換えることができます。
 
 ## ネットワークを利用する
-- `git remote`
-- `git clone`
-  - すでにあるリポジトリを手元に持ってくるコマンド。
-- `git fetch`
-- `git pull`
-- `git push`
+### git remote
+リモートリポジトリを確認したり、設定したりできます。
+
+### git clone
+すでにあるリポジトリを手元に持ってくることができます。
+
+### git fetch
+リモートリポジトリの変更をローカルリポジトリにダウンロードします。
+
+### git pull
+`git fetch`と`git merge`を同時に行います。
+
+### git push
+ローカルリポジトリの変更をリモートリポジトリに反映します。
+
+### 共同で開発を進める際の注意点
+ここまで、`git rebase`や`git reset`を使って変更を取り消したり、歴史をきれいにしたりする方法を紹介しましたが、これらは過去のコミットを書き換える行為にあたります。
+
+基本的には、リモートリポジトリに変更を適用した時点で**歴史は前に進めるしかない**ことを留意していただければと思います。
+
+あくまで`git rebase`は個人で開発しているうちに使うものです。
+
+## その他のコマンド
+
+### git cherry-pick
+あるコミットの変更を現在のブランチに反映します。
+
+### git revert
+あるコミットを打ち消すコミットを作成します。
+
+### git stash
+ワーキング・エリアの変更を一時的に取り除きます。
