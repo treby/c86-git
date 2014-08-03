@@ -11,5 +11,7 @@
    * [Getting Started](github/getting_started.md)
    * [Contribution](github/contribution.md)
 * [Workflow](workflow/README.md)
+   * [git-flow](workflow/git-flow.md)
+   * [github-flow](workflow/github-flow.md)
 * [References](references/README.md)
 
