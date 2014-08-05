@@ -116,6 +116,8 @@ self	git@github.com:treby/codecombat.git (push)
 
 先ほど変更を行った最後の確認を行い、Send Pull Requestボタンをおします。
 
+[IMG: Pull request]
+
 ### レビューと修正
 
 ちゃんと更新が行われているプロジェクトであれば、commit権限がある方がレビューしてくださり、問題なさそうであればMergeしてもらえると思います。レビューの結果、さらに変更の必要があった場合は、変更を同じブランチに対して行い、自分のリモートリポジトリに対してpushすれば、Pull Requestにも自動で変更が反映されます。
