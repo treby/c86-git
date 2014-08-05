@@ -53,13 +53,7 @@ git version 1.8.5.2 (Apple Git-48)
 
 ---
 <dl>
-  <dt id='git-command'>`git status`で始まり〜</dt><dd>このあたりのコマンドの説明も本文で行います:)</dd>
+  <dt id='git-command'> git statusで始まり〜</dt><dd>このあたりのコマンドの説明も本文で行います:)</dd>
   <dt id='masakari'>マサカリ</dt><dd>http://tenshoku.mynavi.jp/it-engineer/knowhow/motemensetsu/01</dd>
 </dl>
 
-
-## [Notes]制作哲学
-- 期待しない
-- 無理をしない
-- 多くを求めない
-- Done is better than perfect.
