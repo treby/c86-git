@@ -28,7 +28,15 @@ Date:   Sat Jun 7 16:24:40 2014 +0900
     Initial commit.
 ```
 
-他にも、`git config`コマンドでは、いろいろな設定が行えます。
+他にも、`git config`コマンドでは、いろいろな設定が行えます。たとえば、(Thumb.dbや.DS_Storeなど)Gitの管理対象外としたいファイルがある場合は、
+
+```
+% echo 'Thumb.db' > ~/.gitignore
+% echo '.DS_Store' >> ~/.gitignore
+% git config --global core.excludesfile '~/.gitignore'
+```
+
+のようにしてあらかじめ設定することが可能です。
 
 ### git init
 今いるディレクトリ以下のファイルをgit管理下におくコマンドです。
@@ -317,7 +325,7 @@ a7ffd6b Second commit.
 ### .gitignore
 Gitを使う上でThumb.dbや.DS_StoreといったOS依存のファイルやプログラムをビルドする際にできる出力ファイルなど、Gitに管理させたくないファイルを明示的に除外することができます。
 
-ディレクトリ以下に`.gitignore`ファイルを作成して、一行に一つ無視したいファイルを指定するほか、`git config core.excludefiles <パス>`で無視したいファイルを羅列したファイルを指定することができます。
+ディレクトリ以下に`.gitignore`ファイルを作成して、一行に一つ無視したいファイルを指定するほか、`git config core.excludesfile <パス>`で無視したいファイルを羅列したファイルを指定することができます。
 
 ### submodule
 ライブラリなどをプロジェクトの一部として、commitの参照として持つことができます。
