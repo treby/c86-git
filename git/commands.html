@@ -1,0 +1,720 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Commands | アトリエのどか式 Git入門</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.6">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="treby">
+    
+    
+    <link rel="next" href="../github/README.html" />
+    
+    
+    <link rel="prev" href="../git/getting_started.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-github="treby/c86-git" data-level="2.2" data-basepath=".." data-revision="1407351441564">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/treby/c86-git" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/treby/c86-git/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/treby/c86-git/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >アトリエのどか式 Git入門</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/treby" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/treby/c86-git/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/treby/c86-git/edit/master/git/commands.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="knowledge/README.html">
+            
+                
+                    <a href="../knowledge/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Knowledge
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="knowledge/about_vcs.html">
+            
+                
+                    <a href="../knowledge/about_vcs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         About Version Control
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="knowledge/about_git.html">
+            
+                
+                    <a href="../knowledge/about_git.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         About Git
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="git/README.html">
+            
+                
+                    <a href="../git/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Git
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="git/getting_started.html">
+            
+                
+                    <a href="../git/getting_started.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Getting Started
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="git/commands.html">
+            
+                
+                    <a href="../git/commands.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Commands
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="github/README.html">
+            
+                
+                    <a href="../github/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         GitHub
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="github/getting_started.html">
+            
+                
+                    <a href="../github/getting_started.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         Getting Started
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="github/contribution.html">
+            
+                
+                    <a href="../github/contribution.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         Contribution
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="workflow/README.html">
+            
+                
+                    <a href="../workflow/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Workflow
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="workflow/git-flow.html">
+            
+                
+                    <a href="../workflow/git-flow.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         git-flow
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="workflow/github-flow.html">
+            
+                
+                    <a href="../workflow/github-flow.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         github-flow
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="references/README.html">
+            
+                
+                    <a href="../references/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         References
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 46.15384615384615%;min-width: 38.46153846153846%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../knowledge/README.html" title="Knowledge" class="chapter done new-chapter" data-progress="1" style="left: 7.6923076923076925%;"></a>
+    
+        <a href="../knowledge/about_vcs.html" title="About Version Control" class="chapter done " data-progress="1.1" style="left: 15.384615384615385%;"></a>
+    
+        <a href="../knowledge/about_git.html" title="About Git" class="chapter done " data-progress="1.2" style="left: 23.076923076923077%;"></a>
+    
+        <a href="../git/README.html" title="Git" class="chapter done new-chapter" data-progress="2" style="left: 30.76923076923077%;"></a>
+    
+        <a href="../git/getting_started.html" title="Getting Started" class="chapter done " data-progress="2.1" style="left: 38.46153846153846%;"></a>
+    
+        <a href="../git/commands.html" title="Commands" class="chapter done " data-progress="2.2" style="left: 46.15384615384615%;"></a>
+    
+        <a href="../github/README.html" title="GitHub" class="chapter  new-chapter" data-progress="3" style="left: 53.84615384615385%;"></a>
+    
+        <a href="../github/getting_started.html" title="Getting Started" class="chapter  " data-progress="3.1" style="left: 61.53846153846154%;"></a>
+    
+        <a href="../github/contribution.html" title="Contribution" class="chapter  " data-progress="3.2" style="left: 69.23076923076923%;"></a>
+    
+        <a href="../workflow/README.html" title="Workflow" class="chapter  new-chapter" data-progress="4" style="left: 76.92307692307692%;"></a>
+    
+        <a href="../workflow/git-flow.html" title="git-flow" class="chapter  " data-progress="4.1" style="left: 84.61538461538461%;"></a>
+    
+        <a href="../workflow/github-flow.html" title="github-flow" class="chapter  " data-progress="4.2" style="left: 92.3076923076923%;"></a>
+    
+        <a href="../references/README.html" title="References" class="chapter  new-chapter" data-progress="5" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_4">
+                    
+                        <h1 id="commands">Commands</h1>
+<h2 id="-">使い始める</h2>
+<h3 id="git-config">git config</h3>
+<p>まずはGitに対して自己紹介をしましょう。commitオブジェクトができることは前述した通りです。そのとき、「誰が」commitしたのかを設定するのです。</p>
+<pre><code>% git config --global user.name treby
+% git config --global user.email treby@atelier-nodoka.net
+</code></pre><p>こうすることで、ホームディレクトリ以下の<code>.gitconfig</code>ファイルに次の内容が書き込まれます。</p>
+<pre><code>% cat ~/.gitconfig
+[user]
+    name = treby
+    email = treby@atelier-nodoka.net
+</code></pre><p>ここで設定した情報は、コミットに含まれます。</p>
+<pre><code>% git log --reverse
+commit dacc936975dde6a1c83db7f853e7dc0ef3d6da4e
+Author: treby &lt;treby@atelier-nodoka.net&gt;
+Date:   Sat Jun 7 16:24:40 2014 +0900
+
+    Initial commit.
+</code></pre><p>他にも、<code>git config</code>コマンドでは、いろいろな設定が行えます。たとえば、(Thumb.dbや.DS_Storeなど)Gitの管理対象外としたいファイルがある場合は、</p>
+<pre><code>% echo &#39;Thumb.db&#39; &gt; ~/.gitignore
+% echo &#39;.DS_Store&#39; &gt;&gt; ~/.gitignore
+% git config --global core.excludesfile &#39;~/.gitignore&#39;
+</code></pre><p>のようにしてあらかじめ設定することが可能です。</p>
+<h3 id="git-init">git init</h3>
+<p>今いるディレクトリ以下のファイルをgit管理下におくコマンドです。
+例えば今、CSSファイルとJSファイル、そして単一のページを持つシンプルなWebページがあるとします。</p>
+<pre><code>% cd public_html
+% tree --dirsfirst
+.
+├── css
+│   └── style.css
+├── js
+│   └── index.js
+└── index.html
+</code></pre><p>ここで、<code>git init</code>コマンドを実行することでこれら全てのファイルをGit管理下におくことができます(リポジトリが作成されます)。</p>
+<pre><code>% ls -a
+.          ..         css        index.html js
+
+% git init
+Initialized empty Git repository in /Users/treby/Documents/sample-git/.git/
+
+% ls -a
+.          ..         .git       css        index.html js
+</code></pre><p>ちなみに<code>.git</code>ディレクトリの下は次のようになっています。</p>
+<pre><code>% tree .git
+.git
+├── HEAD
+├── branches
+├── config
+├── description
+├── hooks
+│   ├── applypatch-msg.sample
+│   ├── commit-msg.sample
+│   ├── post-update.sample
+│   ├── pre-applypatch.sample
+│   ├── pre-commit.sample
+│   ├── pre-push.sample
+│   ├── pre-rebase.sample
+│   ├── prepare-commit-msg.sample
+│   └── update.sample
+├── info
+│   └── exclude
+├── objects
+│   ├── info
+│   └── pack
+└── refs
+    ├── heads
+    └── tags
+</code></pre><h2 id="-">歴史を保存する</h2>
+<p>まずは、基本的なコマンド類について説明します。
+先ほどの<code>git init</code>コマンドを実行しただけではまだリポジトリ保存されていません。</p>
+<p>このことは<code>git status</code>コマンド(後述)を使って確認することができます。</p>
+<pre><code>% git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+    css/
+    index.html
+    js/
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+</code></pre><p><code>git add</code>コマンド<code>git commit</code>コマンドを使って、リポジトリに歴史を保存しましょう。</p>
+<h3 id="git-add">git add</h3>
+<p>ワーキングツリーに行った変更をステージング・エリアに反映するためのコマンドです。</p>
+<p><code>index.html</code>の変更をステージング・エリアに反映させるには、<code>git add index.html</code>のように指定します。</p>
+<pre><code>% git add index.html
+% git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+
+    new file:   index.html
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+    css/
+    js/
+</code></pre><p>また、カレントディレクトリ以下のファイル全てを追加するには、<code>git add .</code>と指定すれば良いでしょう。</p>
+<pre><code>% git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+
+    new file:   css/style.css
+    new file:   index.html
+    new file:   js/index.js
+</code></pre><h3 id="git-commit">git commit</h3>
+<p>ステージング・エリアにある変更をリポジトリに反映します。<code>-m</code>オプションをつけて、コメントを記述します。</p>
+<pre><code>% git commit -m &#39;Initial commit.&#39;
+[master (root-commit) 47bec42] Initial commit.
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 css/style.css
+ create mode 100644 index.html
+ create mode 100644 js/index.js
+</code></pre><p>ちなみにワーキング・エリアに加えた修正(新規ファイルの追加除く)を全て<code>git add</code>し、<code>git commit</code>するのであれば、<code>git commit -am</code>の一コマンドで実行することが可能です。</p>
+<pre><code>% edit index.html
+% git status
+On branch master
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+    modified:   index.html
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+
+% git commit -am &#39;Second commit.&#39;
+[master a7ffd6b] Second commit.
+ 1 file changed, 6 insertions(+)
+</code></pre><h3 id="git-reset">git reset</h3>
+<p>ステージング・エリアの参照を設定し直します。
+一度ステージング・エリアに反映した変更を取り消す際などに使用します。</p>
+<pre><code>% git status
+On branch master
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+    detail.html
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+
+% git add detail.html
+
+% git status
+On branch master
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+    new file:   detail.html
+
+% git reset
+
+% git status
+On branch master
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+    detail.html
+</code></pre><p>下記のような感じに履歴を残さずに歴史を書き換えることが可能です。</p>
+<pre><code>% git log --oneline
+849072f Add detail.html
+a7ffd6b Second commit.
+733b329 Initial commit.
+
+% git reset a7ffd6b
+
+% git log --oneline
+a7ffd6b Second commit.
+733b329 Initial commit.
+</code></pre><h3 id="git-rm">git rm</h3>
+<p>ファイルを削除する際に使用します。</p>
+<pre><code>% git rm &lt;ファイル名&gt;
+</code></pre><h3 id="git-mv">git mv</h3>
+<p>ファイル名を明示的に変更する際に使用します。</p>
+<pre><code>% git mv &lt;現在のファイル名&gt; &lt;変更したいファイル名&gt;
+</code></pre><h2 id="-">状態を確認する</h2>
+<h3 id="git-status">git status</h3>
+<p>現在のワーキング・ツリーの状態を表示します。</p>
+<h3 id="git-log">git log</h3>
+<p>リポジトリの履歴を表示します。</p>
+<h2 id="-">ブランチを利用する</h2>
+<h3 id="git-branch">git branch</h3>
+<p>ブランチの一覧を表示したり、新しくブランチを作成したりします。</p>
+<h3 id="git-checkout">git checkout</h3>
+<p>ブランチの切り替えを行います。</p>
+<h3 id="git-merge">git merge</h3>
+<p>ブランチとブランチを統合します。</p>
+<h2 id="-">歴史を変更する</h2>
+<h3 id="git-rebase">git rebase</h3>
+<p>歴史を書き換えることができます。</p>
+<h2 id="-">ネットワークを利用する</h2>
+<h3 id="git-remote">git remote</h3>
+<p>リモートリポジトリを確認したり、設定したりできます。</p>
+<h3 id="git-clone">git clone</h3>
+<p>すでにあるリポジトリを手元に持ってくることができます。</p>
+<h3 id="git-fetch">git fetch</h3>
+<p>リモートリポジトリの変更をローカルリポジトリにダウンロードします。</p>
+<h3 id="git-pull">git pull</h3>
+<p><code>git fetch</code>と<code>git merge</code>を同時に行います。</p>
+<h3 id="git-push">git push</h3>
+<p>ローカルリポジトリの変更をリモートリポジトリに反映します。</p>
+<h3 id="-">共同で開発を進める際の注意点</h3>
+<p>ここまで、<code>git rebase</code>や<code>git reset</code>を使って変更を取り消したり、歴史をきれいにしたりする方法を紹介しましたが、これらは過去のコミットを書き換える行為にあたります。</p>
+<p>基本的には、リモートリポジトリに変更を適用した時点で<strong>歴史は前に進めるしかない</strong>ことを留意していただければと思います。</p>
+<p>あくまで<code>git rebase</code>は個人で開発しているうちに使うものです。</p>
+<h2 id="-">その他のコマンド・機能</h2>
+<h3 id="git-diff">git diff</h3>
+<p>ファイルの変更を表示するコマンドです。diffにもいくつか前に書いた種類があります。それぞれの違いを知る上で、先述した3つの状態を参考にすると分かりやすいかと思います。</p>
+<ul>
+<li><code>git diff</code><ul>
+<li>ステージング・エリアとワーキングツリーの間の差分を表示します。</li>
+</ul>
+</li>
+<li><code>git diff --staged</code><ul>
+<li>ステージング・エリアとリポジトリの間の差分を表示します。</li>
+</ul>
+</li>
+<li><code>git diff HEAD</code><ul>
+<li>ワーキング・エリアとリポジトリの間の差分を表示します。</li>
+</ul>
+</li>
+</ul>
+<p><a href="../assets/git_diff.png"><img src="../assets/git_diff.png" alt="git diff"></a></p>
+<h3 id="git-cherry-pick">git cherry-pick</h3>
+<p>あるコミットの変更を現在のブランチに反映します。</p>
+<h3 id="git-revert">git revert</h3>
+<p>あるコミットを打ち消すコミットを作成します。</p>
+<h3 id="git-stash">git stash</h3>
+<p>ワーキング・エリアの変更を一時的に取り除きます。</p>
+<h3 id="-gitignore">.gitignore</h3>
+<p>Gitを使う上でThumb.dbや.DS_StoreといったOS依存のファイルやプログラムをビルドする際にできる出力ファイルなど、Gitに管理させたくないファイルを明示的に除外することができます。</p>
+<p>ディレクトリ以下に<code>.gitignore</code>ファイルを作成して、一行に一つ無視したいファイルを指定するほか、<code>git config core.excludesfile &lt;パス&gt;</code>で無視したいファイルを羅列したファイルを指定することができます。</p>
+<h3 id="submodule">submodule</h3>
+<p>ライブラリなどをプロジェクトの一部として、commitの参照として持つことができます。</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../git/getting_started.html" class="navigation navigation-prev " aria-label="Previous page: Getting Started"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../github/README.html" class="navigation navigation-next " aria-label="Next page: GitHub"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
