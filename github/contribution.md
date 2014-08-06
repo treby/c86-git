@@ -116,7 +116,7 @@ self	git@github.com:treby/codecombat.git (push)
 
 先ほど変更を行った最後の確認を行い、Send Pull Requestボタンをおします。
 
-[IMG: Pull request]
+[![Pull Request](../assets/gh_pr.png)](../assets/gh_pr.png)
 
 ### レビューと修正
 

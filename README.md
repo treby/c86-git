@@ -7,7 +7,7 @@
 筆者は会社でいわゆるLAMPなWebアプリケーションの開発・運用に携わっており、その成果物の管理に**git**と**GitHub Enterprise(GHE)**を利用しています。
 もちろん、gitは日常的に使っており`git status`に始まり、`git commit`に終わる毎日<sup><a href='#git-command'>[*]</a></sup>といっても過言ではありません。
 
-[IMG: GHEのContributions]
+[![Contributions](./assets/contributions.png)](./assets/contributions.png)
 
 本書が想定する読者層は主にgit初心者もしくは勉強中の方ですが、たとえ初級者を自称されていたとしても受け手の方で背景や事前の理解度は様々でしょうから、「初級者」の全ての方に分かりやすくというのは難しいと思います。
 

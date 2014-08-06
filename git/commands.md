@@ -311,7 +311,7 @@ a7ffd6b Second commit.
 - `git diff HEAD`
   - ワーキング・エリアとリポジトリの間の差分を表示します。
 
-[IMG: git diffの違い]
+[![git diff](../assets/git_diff.png)](../assets/git_diff.png)
 
 ### git cherry-pick
 あるコミットの変更を現在のブランチに反映します。

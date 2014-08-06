@@ -1,8 +1,8 @@
 # Getting Started
 
-[IMG: GitHub]
-
 まず、GitHubのアカウントを作成します。
+
+[![GitHub](../assets/gh_main.png)](../assets/gh_main.png)
 
 ```
 https://github.com/treby
@@ -10,7 +10,6 @@ https://github.com/treby
 
 のような、`https://github.com/<ユーザ名>`があなたのページとなります。
 
-[IMG: 自分のページ]
 
 ## 公開鍵を登録する
 手元のマシンで作業を行い、それをGitHubに反映するためにはリモートリポジトリとなるGitHubとのやり取りに使うための秘密鍵と公開鍵のペアが必要となります。
@@ -37,7 +36,7 @@ The key fingerprint is:
 
 GitHubページの右上にあるAccount settingsから、SSH Keysタブを選択し、Add SSH Keyボタンを選択します。
 
-[IMG: Add SSH Key]
+[![Add SSH Key](../assets/gh_ssh.png)](../assets/gh_ssh.png)
 
 タイトルは公開鍵を識別できるものなら何でもかまいません。
 
@@ -67,7 +66,7 @@ Host github
 
 画面右上の+アイコンからNew repositoryを選択します。
 
-[IMG: New repository]
+[![New repository](../assets/gh_repository.png)](../assets/gh_repository.png)
 
 リポジトリの名前と説明文、アクセス権を設定します。アクセス権に関しては、有料会員でないとPrivateを選択することができないので注意が必要です。
 
